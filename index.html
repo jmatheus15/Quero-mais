@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pizzaria Quero Mais | Pizza caprichada em Coremas, PB</title>
+<meta name="description" content="Pizza quentinha e caprichada no Cabo Branco, em Coremas, PB. Até quatro sabores na redonda, retangular gigante, pizzas doces e esfihas. Peça pelo WhatsApp (83) 99818-9056.">
+<meta name="theme-color" content="#FF3B15">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF3B15'/%3E%3Cpath d='M9 17c15-7 31-7 46 0l-3 6c-13-5-27-5-40 0z' fill='%23F6E8C6'/%3E%3Cpath d='M13 27c12-4 26-4 38 0L32 58z' fill='none' stroke='%23F6E8C6' stroke-width='3.6' stroke-linejoin='round'/%3E%3Cg fill='%23F6E8C6'%3E%3Ccircle cx='26' cy='34' r='4'/%3E%3Ccircle cx='38' cy='33' r='3.2'/%3E%3Ccircle cx='32' cy='44' r='3.6'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Pizzaria Quero Mais, Coremas PB">
+<meta property="og:description" content="Uma fatia nunca basta. Pizza caprichada no Cabo Branco, pedido pelo WhatsApp.">
+<!-- DEPLOY STEP: troque as duas URLs abaixo pela URL absoluta do site no ar -->
+<meta property="og:url" content="https://SEU-DOMINIO.com.br/">
+<meta property="og:image" content="https://SEU-DOMINIO.com.br/assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=DM+Mono:wght@500&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --red:#FF3B15;--grid:#EC2C08;--maroon:#94110A;--maroon-2:#6E0C06;
+  --cream:#F6E8C6;--paper:#FBF0DC;--paper-2:#F4E2C2;--card:#FFF8EC;
+  --ink:#2B0D06;--ink-2:#5A2A1C;
+  --cheese:#FFC21A;--cheese-2:#FFD45A;
+  --e-out:cubic-bezier(.22,1,.36,1);--e-io:cubic-bezier(.65,0,.35,1);
+  --f-display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+  --f-text:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'DM Mono',ui-monospace,Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden;overflow-x:clip;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--f-text);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+img{max-width:100%}
+a{color:inherit}
+main:focus{outline:none}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:8px}
+.dark :focus-visible,.foot :focus-visible{outline-color:var(--cheese)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;left:12px;top:12px;z-index:200;background:var(--ink);color:var(--cream);padding:12px 16px;border-radius:10px;font-weight:700;text-decoration:none;transform:translateY(-200%);transition:transform .3s var(--e-out)}
+.skip:focus{transform:none}
+
+/* ambiente: a toalha quadriculada da logo, bem de leve, atrás de tudo */
+.ambient{position:fixed;inset:-140px;z-index:-10;pointer-events:none;background-image:linear-gradient(90deg,rgba(255,59,21,.06) 2px,transparent 2px),linear-gradient(rgba(255,59,21,.06) 2px,transparent 2px);background-size:132px 132px;animation:drift 110s linear infinite alternate}
+.ambient::after{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes drift{to{transform:translate3d(66px,44px,0)}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;border:2px solid var(--ink);background:var(--cheese);color:var(--ink);font:700 17px/1 var(--f-text);text-decoration:none;box-shadow:4px 4px 0 var(--ink);cursor:pointer;transition:transform .25s var(--e-out),box-shadow .25s var(--e-out),background-color .25s var(--e-out)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);background:var(--cheese-2)}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn svg{width:21px;height:21px;flex:none}
+.link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;border:0;background:none;color:inherit;font:700 16px/1.2 var(--f-text);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;cursor:pointer;transition:text-underline-offset .25s var(--e-out),opacity .25s}
+.link:hover{text-underline-offset:8px}
+.link svg{width:20px;height:20px;flex:none}
+.link[aria-disabled=true]{opacity:.55;cursor:not-allowed;text-decoration:none}
+
+/* navegação */
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 max(16px,calc(50vw - 640px));transition:background-color .45s var(--e-out),box-shadow .45s var(--e-out)}
+.nav.solid{background:rgba(251,240,220,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(43,13,6,.12)}
+.brand{display:inline-flex;text-decoration:none;border-radius:6px}
+.brand-band{display:inline-flex;align-items:center;gap:3px;padding:5px 11px;background:var(--maroon);color:var(--cream);border-block:2px solid var(--cream);outline:2px solid var(--maroon);border-radius:3px;font:900 21px/1 var(--f-display);letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+.brand-slice{width:28px;height:32px;margin:-12px 1px -6px;color:var(--cream)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font:600 15px/1 var(--f-text);padding:10px 0;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .35s var(--e-out)}
+.nav ul a:hover{background-size:100% 2px}
+.nav:not(.solid) ul a{color:var(--cream);text-shadow:0 1px 8px rgba(20,0,0,.6)}
+.nav-cta{min-height:44px;padding:0 18px;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+.nav-cta:hover{box-shadow:5px 5px 0 var(--ink)}
+@media (max-width:900px){.nav ul{display:none}}
+@media (max-width:400px){.brand-band .bp{display:none}.nav-cta span{display:none}.nav-cta{padding:0 14px}}
+
+/* ============ HERO: o vídeo da pizza guiado pelo scroll ============ */
+:root{--tshadow:0 1px 2px rgba(20,0,0,.95),0 3px 12px rgba(20,0,0,.78),0 10px 44px rgba(20,0,0,.8)}
+.hero{position:relative;height:700vh;background:#860407}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;background-color:#860407;background-image:linear-gradient(90deg,rgba(60,0,0,.55) 0 7px,transparent 7px),linear-gradient(rgba(60,0,0,.55) 0 7px,transparent 7px);background-size:118px 118px}
+.poster,.hero-video,.still{position:absolute;inset:0;width:100%;height:100%}
+.poster{background:no-repeat 100% 50%/cover}
+.hero-video{display:block;object-fit:cover;object-position:100% 50%;opacity:0;transform:translateZ(0);transition:opacity .6s var(--e-out)}
+.video-ready .hero-video{opacity:1}
+.video-failed .hero-video{display:none}
+.still{display:none;background:no-repeat 100% 50%/cover}
+.scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(30,0,0,.5),rgba(30,0,0,0) 150px),linear-gradient(90deg,rgba(36,0,0,.62) 0%,rgba(36,0,0,.45) 30%,rgba(36,0,0,0) 58%)}
+
+/* as legendas moram no canto de cima à esquerda: é a região calma em todos os quadros */
+.bands{position:absolute;z-index:2;left:5vw;top:0;bottom:0;width:min(540px,40vw);display:grid;align-items:start;padding-top:clamp(92px,14vh,150px);pointer-events:none}
+.band{position:relative;grid-area:1/1;pointer-events:auto;--ks:clamp(0,(var(--k,1) - .55)*3,1);--kb:clamp(0,(var(--k,1) - .72)*4,1)}
+.band::before{content:"";position:absolute;inset:-70px -90px -70px -5vw;z-index:-1;pointer-events:none;opacity:calc(.25 + .75*var(--k,1));background:radial-gradient(ellipse 72% 62% at 42% 46%,rgba(30,0,0,.70) 0%,rgba(30,0,0,.48) 46%,rgba(30,0,0,0) 76%)}
+.band[data-fx=haze]::before{background:radial-gradient(ellipse 72% 62% at 42% 46%,rgba(30,0,0,.80) 0%,rgba(30,0,0,.58) 46%,rgba(30,0,0,0) 76%)}
+.js .band{opacity:0;visibility:hidden}
+.kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;padding:8px 13px;border-radius:999px;background:var(--maroon);color:var(--cream);font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase}
+.bt{position:relative;margin:0;font:900 clamp(48px,5.6vw,92px)/.88 var(--f-display);letter-spacing:.005em;text-transform:uppercase;color:var(--cream);text-shadow:var(--tshadow);text-wrap:balance}
+.band-final .bt{font-size:clamp(34px,3.4vw,56px)}
+.bt.big,.band-final .bt.big{margin-top:10px;font-size:clamp(68px,8vw,128px);color:var(--cream);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:5px 5px 0 var(--ink),var(--tshadow)}
+.bs{margin:20px 0 0;font:600 clamp(17px,1.35vw,20px)/1.45 var(--f-text);color:var(--cream);text-shadow:var(--tshadow);max-width:32ch}
+.band .bs{opacity:var(--ks);transform:translateY(calc((1 - var(--ks))*10px))}
+.band-final .sub{display:none}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:28px}
+.band .ctas{opacity:var(--kb);transform:translateY(calc((1 - var(--kb))*14px))}
+.band .link{color:var(--cream);text-shadow:var(--tshadow)}
+.cue{display:inline-flex;align-items:center;gap:10px;margin:30px 0 0;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cream);text-shadow:var(--tshadow);opacity:var(--ks)}
+.cue svg{width:18px;height:18px}
+.stage.on .cue svg{animation:nudge 1.8s var(--e-io) infinite}
+@keyframes nudge{50%{transform:translateY(5px)}}
+
+/* entradas por batida, cada uma ecoando a filmagem: só transform e opacity, guiadas por --k */
+.w{display:inline-block;--kc:clamp(0,(var(--k,1) - var(--th,0))*2.6,1);opacity:var(--kc)}
+[data-fx=rise] .w{transform:translateY(calc((1 - var(--kc))*.55em))}
+[data-fx=zoom] .w{transform:scale(calc(.82 + .18*var(--kc)))}
+[data-fx=haze] .w{transform:scale(calc(1.08 - .08*var(--kc)))}
+[data-fx=slide] .w{transform:translateX(calc((1 - var(--kc))*-.9em))}
+.soft{position:absolute;inset:0;filter:blur(10px);opacity:calc((1 - var(--k,1))*.9);pointer-events:none}
+.soft .w{opacity:1;transform:none}
+
+/* em pé (celular, tablet, toque em retrato): a foto final no alto e o texto embaixo */
+@media (max-width:720px),(orientation:portrait) and (max-width:1024px),(orientation:portrait) and (pointer:coarse){
+  .stage{display:flex;flex-direction:column;padding-top:68px}
+  .still{position:relative;inset:auto;height:auto;aspect-ratio:1.42;flex:none}
+  .scrim,.band::before{display:none}
+  .bands{position:relative;inset:auto;width:auto;display:block;padding:28px 16px calc(40px + env(safe-area-inset-bottom));text-align:center}
+  .band-final .sub{display:block;margin-inline:auto}
+  .ctas{justify-content:center}
+  .bt,.band-final .bt{font-size:clamp(34px,9vw,56px)}
+  .bt.big,.band-final .bt.big{font-size:clamp(60px,17vw,104px);text-shadow:4px 4px 0 var(--ink),var(--tshadow)}
+}
+@media (max-height:560px){
+  .cue{display:none}
+  .bands{padding-top:78px}
+  .bt,.band-final .bt{font-size:clamp(28px,4.4vw,46px)}
+  .bt.big,.band-final .bt.big{font-size:clamp(44px,7vw,72px)}
+  .bs{font-size:15px;margin-top:10px}
+  .kicker{margin-bottom:10px}
+  .ctas{margin-top:16px}
+}
+
+/* ============ seções ============ */
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.sec{position:relative;padding:clamp(84px,11vw,150px) 0}
+.eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 18px;font:500 12px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--maroon)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.h2{margin:0;font:900 clamp(46px,6vw,92px)/.9 var(--f-display);letter-spacing:.005em;text-transform:uppercase;text-wrap:balance}
+.lede{margin:22px 0 0;max-width:46ch;font-size:clamp(17px,1.4vw,20px);line-height:1.55;color:var(--ink-2)}
+.dark{background:var(--maroon);color:var(--cream)}
+.dark .eyebrow{color:var(--cheese)}
+.dark .lede{color:rgba(246,232,198,.88)}
+.redsec{background-color:var(--red);background-image:linear-gradient(90deg,var(--grid) 0 6px,transparent 6px),linear-gradient(var(--grid) 0 6px,transparent 6px);background-size:120px 120px;overflow:hidden}
+.redsec .eyebrow,.redsec .lede{color:var(--ink)}
+
+/* entrada das seções */
+.js .reveal .rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--e-out),transform .9s var(--e-out);transition-delay:calc(var(--i,0)*95ms)}
+.js .reveal.in .rv{opacity:1;transform:none}
+.js .reveal .pol.rv{transition:opacity .8s var(--e-out),transform .9s var(--e-out),rotate .5s var(--e-out),translate .5s var(--e-out);transition-delay:calc(var(--i,0)*95ms)}
+.js .reveal.done .rv{transition-delay:0s!important}
+
+/* polaroid: as fotos reais da casa */
+.pol{margin:0;padding:8px 8px 30px;background:var(--card);border-radius:4px;box-shadow:0 1px 0 rgba(43,13,6,.08),0 16px 30px -14px rgba(60,12,4,.55);rotate:var(--r,-3deg);transition:rotate .5s var(--e-out),translate .5s var(--e-out)}
+.pol img{display:block;width:150px;height:200px;object-fit:cover;border-radius:2px;background:var(--paper-2)}
+.pol figcaption{margin-top:10px;text-align:center;font:500 10px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+
+/* cardápio */
+.menu-head{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end;margin-bottom:56px}
+.menu-head .lede{margin:0}
+.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.dish{display:grid;grid-template-columns:auto minmax(0,1fr);gap:30px;align-items:center;padding:26px 30px 26px 26px;border-radius:28px;background:rgba(244,226,194,.72)}
+.dish:hover .pol{rotate:0deg;translate:0 -6px}
+.tag{display:inline-block;margin-bottom:12px;padding:6px 10px;border-radius:999px;background:var(--red);color:var(--ink);font:500 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase}
+.dish h3{margin:0 0 10px;font:900 clamp(32px,2.8vw,42px)/.92 var(--f-display);text-transform:uppercase}
+.dish p{margin:0;max-width:28ch;color:var(--ink-2)}
+.menu-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 28px;margin:34px 0 0;padding:18px 24px;border:2px dashed rgba(43,13,6,.3);border-radius:20px;font-weight:600}
+.slice-ic{width:58px;height:66px;color:var(--red);flex:none}
+.slice-ic .sw2{transform-box:fill-box;transform-origin:50% 100%}
+.on .slice-ic .sw2{animation:sway2 3.8s ease-in-out infinite alternate}
+.on .slice-ic .sw2:nth-of-type(2){animation-delay:-1.3s}
+.on .slice-ic .sw2:nth-of-type(3){animation-delay:-2.4s}
+@keyframes sway2{from{transform:translateX(-1.5px) scaleY(.92)}to{transform:translateX(1.5px) scaleY(1.05)}}
+.head-ic{display:flex;gap:22px;align-items:flex-end}
+
+/* monte a sua */
+.builder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,6vw,96px);align-items:center}
+.mpizza{display:block;width:min(100%,540px);height:auto;margin-inline:auto;overflow:visible}
+.mspin,.mpop{transform-box:fill-box;transform-origin:center}
+.on .mspin{animation:spin 140s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mpop.pop{animation:pop .65s var(--e-out)}
+@keyframes pop{0%{transform:scale(.92)}55%{transform:scale(1.025)}100%{transform:scale(1)}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding:0;list-style:none}
+.chip{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:0 16px;border-radius:999px;border:2px solid rgba(246,232,198,.75);background:transparent;color:var(--cream);font:600 15px/1 var(--f-text);cursor:pointer;transition:background-color .25s var(--e-out),color .25s,border-color .25s,transform .25s var(--e-out),opacity .25s}
+.chip .dot{width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px rgba(246,232,198,.75)}
+.chip:hover{border-color:var(--cream);transform:translateY(-2px)}
+.chip[aria-pressed=true]{background:var(--cheese);border-color:var(--cheese);color:var(--ink)}
+.chip[aria-pressed=true] .dot{box-shadow:0 0 0 2px var(--ink)}
+.chip:disabled{opacity:.42;cursor:not-allowed;transform:none}
+.order{margin-top:28px;padding:24px;border-radius:24px;background:rgba(43,4,0,.28);border:1px solid rgba(246,232,198,.2)}
+.order-label{margin:0;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cheese)}
+.order-line{margin:10px 0 20px;font:900 clamp(28px,2.6vw,38px)/1 var(--f-display);text-transform:uppercase;color:var(--cream)}
+.order-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
+.fine{margin:16px 0 0;max-width:52ch;font-size:14px;color:rgba(246,232,198,.8)}
+
+/* fotos */
+.marquee{display:grid;gap:26px;margin:64px -60px 0;rotate:-2deg;padding:18px 0}
+.track{display:flex;gap:24px;width:max-content}
+.track .pol img{width:150px;height:200px}
+.on .track{animation:mq 95s linear infinite}
+.on .track.rev{animation-duration:120s;animation-direction:reverse}
+@keyframes mq{to{transform:translateX(-50%)}}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:72px 0 0;padding:0;list-style:none}
+.stat{padding:26px 24px;border-radius:24px;background:var(--card);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.num{display:inline-block;font:900 clamp(58px,6vw,92px)/.9 var(--f-display)}
+.num-suf{margin-left:6px;font:900 clamp(26px,2.4vw,36px)/1 var(--f-display);text-transform:uppercase}
+.stat p{margin:12px 0 0;font-size:15px;line-height:1.4;color:var(--ink-2)}
+.stars{display:flex;gap:3px;margin-top:10px;color:var(--red)}
+.stars svg{width:18px;height:18px}
+.on .stars svg{animation:twinkle 3.6s ease-in-out infinite}
+.on .stars svg:nth-child(2){animation-delay:-.7s}.on .stars svg:nth-child(3){animation-delay:-1.4s}.on .stars svg:nth-child(4){animation-delay:-2.1s}.on .stars svg:nth-child(5){animation-delay:-2.8s}
+@keyframes twinkle{50%{opacity:.55}}
+.ig{margin:34px 0 0;text-align:center}
+
+/* festas */
+.party{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,100px);align-items:center}
+.collage{position:relative;height:530px}
+.collage .pol{position:absolute}
+.collage .pol img{width:178px;height:237px}
+.collage .pol:nth-child(1){left:0;top:30px}
+.collage .pol:nth-child(2){left:50%;top:0;z-index:2}
+.collage .pol:nth-child(3){left:25%;top:250px;z-index:3}
+.collage .pol:hover{rotate:0deg;translate:0 -8px;z-index:4}
+.perks{display:grid;gap:12px;margin:28px 0 32px;padding:0;list-style:none;font-weight:600}
+.perks li{display:flex;gap:12px;align-items:baseline}
+.perks li::before{content:"";width:10px;height:10px;flex:none;border-radius:50%;background:var(--red);box-shadow:0 0 0 2px var(--ink)}
+.confetti{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.confetti i{position:absolute;left:var(--x);top:var(--y);width:10px;height:5px;border-radius:2px;background:var(--c);opacity:.5;rotate:var(--a)}
+.on .confetti i{animation:float var(--d) ease-in-out var(--dl) infinite alternate}
+
+/* como pedir */
+.soft-sec{background:rgba(244,226,194,.62)}
+.steps-wrap{position:relative;margin-top:64px}
+.trace{position:absolute;left:0;top:0;width:100%;height:88px;overflow:visible;pointer-events:none}
+.trace path{fill:none;stroke:var(--red);stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:0;padding:0;list-style:none}
+.step-ic{position:relative;display:grid;place-items:center;width:88px;height:88px;border-radius:50%;background:var(--card);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.step-ic svg{width:44px;height:44px}
+.on .step:first-child .step-ic::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:3px solid var(--red);animation:ring 2.8s var(--e-out) infinite}
+@keyframes ring{from{opacity:.9;transform:scale(.86)}to{opacity:0;transform:scale(1.28)}}
+.step-n{display:block;margin-top:26px;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--maroon)}
+.step h3{margin:10px 0 8px;font:900 clamp(32px,2.8vw,40px)/.95 var(--f-display);text-transform:uppercase}
+.step p{margin:0;max-width:30ch;color:var(--ink-2)}
+
+/* perguntas */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,6vw,96px);align-items:start}
+.faq-head{position:sticky;top:110px}
+.qa{border-top:2px solid var(--ink)}
+.qa:last-child{border-bottom:2px solid var(--ink)}
+.qa h3{margin:0}
+.qa button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;border:0;background:none;color:var(--ink);text-align:left;font:700 clamp(19px,1.6vw,22px)/1.3 var(--f-text);cursor:pointer}
+.plus{position:relative;flex:none;width:36px;height:36px;border-radius:50%;background:var(--red);transition:rotate .45s var(--e-out),background-color .3s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2.5px;border-radius:2px;background:var(--ink);translate:-50% -50%}
+.plus::after{rotate:90deg}
+.qa button:hover .plus{background:var(--cheese)}
+.qa.open .plus{rotate:45deg}
+.js .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--e-out)}
+.js .qa.open .ans{grid-template-rows:1fr}
+.ans>div{overflow:hidden}
+.ans p{margin:0 0 26px;max-width:56ch;color:var(--ink-2)}
+.js .ans p{opacity:0;transform:translateY(-6px);transition:opacity .35s var(--e-out),transform .5s var(--e-out)}
+.js .qa.open .ans p{opacity:1;transform:none}
+
+/* onde estamos */
+.final-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(36px,5vw,72px);align-items:center}
+.final .h2{font-size:clamp(58px,8vw,128px)}
+.final .h2 .q{display:block;margin-top:6px;color:var(--cream);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:5px 5px 0 var(--ink)}
+.addr{margin:26px 0 30px;max-width:36ch;font-weight:600;font-size:clamp(18px,1.5vw,21px)}
+.phone{margin:18px 0 0;font:500 14px/1.4 var(--f-mono);letter-spacing:.06em}
+.hours{padding:28px;border-radius:26px;background:var(--card);border:2px solid var(--ink);box-shadow:7px 7px 0 var(--ink)}
+.hours h3{margin:0;font:900 34px/1 var(--f-display);text-transform:uppercase}
+.today{display:inline-flex;align-items:center;gap:9px;margin:14px 0 14px;padding:9px 13px;border-radius:14px;background:var(--maroon);color:var(--cream);font:500 12px/1.35 var(--f-mono);letter-spacing:.06em}
+.today i{flex:none;width:9px;height:9px;border-radius:50%;background:var(--cheese)}
+.on .today i{animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+.days{margin:0;padding:0;list-style:none}
+.days li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 10px;margin:0 -10px;border-bottom:1px dashed rgba(43,13,6,.28);border-radius:10px;font-weight:600}
+.days li:last-child{border-bottom:0}
+.days li span:last-child{font:500 12px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
+.days li.off span:last-child{color:var(--maroon)}
+.days li.now{background:var(--cheese)}
+.tiny{margin:14px 0 0;font-size:14px;color:var(--ink-2)}
+
+/* rodapé */
+.foot{background:var(--maroon-2);color:var(--cream);padding:56px 0 44px}
+.foot-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.foot-brand{display:flex;align-items:center;gap:18px}
+.badge{width:76px;height:76px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--cream)}
+.foot-name{margin:0;font:900 26px/1 var(--f-display);text-transform:uppercase}
+.foot-brand p:last-child{margin:6px 0 0;font-size:15px}
+.foot ul{display:flex;flex-wrap:wrap;gap:8px 26px;margin:0;padding:0;list-style:none}
+.foot ul a{font-weight:600;text-underline-offset:4px}
+.foot small{display:block;margin-top:34px;font-size:13px;color:rgba(246,232,198,.78)}
+
+.mbar{display:none}
+
+@media (max-width:900px){
+  .menu-head,.builder,.party,.faq,.final-grid{grid-template-columns:minmax(0,1fr)}
+  .menu-grid{grid-template-columns:minmax(0,1fr)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .faq-head{position:static}
+  .collage{height:420px;max-width:520px}
+  .steps{grid-template-columns:minmax(0,1fr);gap:40px}
+  .trace{display:none}
+  .head-ic .slice-ic{display:none}
+}
+@media (max-width:720px){
+  .dish{gap:20px;padding:20px}
+  .dish .pol img{width:116px;height:155px}
+  .collage{height:470px}
+  .collage .pol img{width:136px;height:181px}
+  .collage .pol:nth-child(2){left:auto;right:0}
+  .collage .pol:nth-child(3){left:22%;top:240px}
+  .stat{padding:20px 18px}
+  .mbar{display:block;position:fixed;z-index:60;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateY(160%);transition:transform .45s var(--e-out)}
+  .mbar.show{transform:none}
+  .mbar .btn{width:100%}
+  .foot{padding-bottom:120px}
+}
+@media (pointer:coarse){.btn,.chip,.link{min-height:44px}}
+
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+
+/* hero estático: celular, tablet em pé, toque em retrato, celular deitado e movimento reduzido.
+   As cinco condições batem caractere por caractere com GATES no JS. */
+@media (max-width: 720px), (orientation: portrait) and (max-width: 1024px), (orientation: portrait) and (pointer: coarse), (orientation: landscape) and (pointer: coarse) and (max-height: 560px), (prefers-reduced-motion: reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:auto;min-height:100vh;min-height:100svh}
+  .poster,.hero-video{display:none}
+  .still{display:block;background-image:url(assets/hero-final.jpg)}
+  .band:not(.band-final){display:none}
+  .band-final{opacity:1!important;visibility:visible!important}
+  .band .w,.band .bs,.band .ctas{opacity:1!important;transform:none!important}
+  .band::before{opacity:1}
+  .soft,.cue{display:none}
+}
+
+/* movimento reduzido: nada se mexe */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
+  .js .reveal .rv,.js .ans p{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="ambient" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#hero" aria-label="Pizzaria Quero Mais, voltar ao início">
+    <span class="brand-band" aria-hidden="true"><span class="bp">Pizzaria</span><svg class="brand-slice" viewBox="0 0 64 72"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M23 19c-5-5 3-8-1-14"/><path d="M31 17c-5-5 3-8-1-13"/><path d="M39 19c-4-4 2-7-1-11"/></g><path fill="currentColor" d="M6 25c17-8 35-8 52 0l-3 7c-15-6-31-6-46 0z"/><path d="M11 36c14-5 28-5 42 0L32 69z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/><g fill="currentColor"><circle cx="25" cy="44" r="4.6"/><circle cx="38" cy="43" r="3.7"/><circle cx="32" cy="54" r="4"/></g></svg><span>Quero Mais</span></span>
+  </a>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#monte">Monte a sua</a></li>
+      <li><a href="#fotos">Fotos</a></li>
+      <li><a href="#onde">Onde estamos</a></li>
+    </ul>
+  </nav>
+  <a class="btn nav-cta" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Pedir no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg><span>Pedir no Zap</span></a>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section id="hero" class="hero" aria-label="Apresentação">
+  <h1 class="sr-only">Pizzaria Quero Mais, pizza caprichada em Coremas, PB</h1>
+  <div class="stage">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="poster" aria-hidden="true"></div>
+    <video id="heroVideo" class="hero-video" preload="none" muted playsinline disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+    <div class="still" aria-hidden="true"></div>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <div class="bands">
+      <div class="band" data-a="0" data-b=".17" data-fx="rise">
+        <p class="kicker">Pizzaria Quero Mais · Coremas, PB</p>
+        <p class="bt">Bateu a fome?</p>
+        <p class="bs">Role a tela e chegue mais perto. Ela acabou de sair do forno.</p>
+        <p class="cue" aria-hidden="true">Role para ver <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+      </div>
+      <div class="band" data-a=".19" data-b=".37" data-fx="zoom">
+        <p class="bt">Recheio caprichado. Sem economia.</p>
+        <p class="bs">Calabresa, azeitona e queijo de ponta a ponta. Até quatro sabores na mesma pizza.</p>
+      </div>
+      <div class="band" data-a=".39" data-b=".57" data-fx="haze">
+        <p class="bt">Quentinha, direto do forno.</p>
+        <p class="bs">Queijo dourado, borda no ponto e aquele cheiro que toma conta da rua.</p>
+      </div>
+      <div class="band" data-a=".59" data-b=".77" data-fx="slide">
+        <p class="bt">Massa leve. Borda crocante.</p>
+        <p class="bs">A base que segura o recheio sem pesar no estômago.</p>
+      </div>
+      <div class="band band-final" data-a=".80" data-b="1" data-fx="rise" data-ramp=".05">
+        <p class="kicker">A melhor de Coremas</p>
+        <h2 class="bt">Uma fatia nunca basta.</h2>
+        <p class="bt big" data-th0=".22">Quero mais.</p>
+        <p class="bs sub">Todo dia, menos quarta. Rua São Pedro, 2, no Cabo Branco, ao lado da igreja.</p>
+        <div class="ctas">
+          <a class="btn" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Pedir no WhatsApp</a>
+          <a class="link" href="#cardapio">Ver o cardápio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cardapio" class="sec live" aria-labelledby="t-cardapio">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <div class="rv"><p class="eyebrow">Cardápio</p><h2 id="t-cardapio" class="h2">O que sai do nosso forno</h2></div>
+      <div class="rv head-ic" style="--i:1">
+        <svg class="slice-ic" viewBox="0 0 64 72" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path class="sw2" d="M23 19c-5-5 3-8-1-14"/><path class="sw2" d="M31 17c-5-5 3-8-1-13"/><path class="sw2" d="M39 19c-4-4 2-7-1-11"/></g><path fill="currentColor" d="M6 25c17-8 35-8 52 0l-3 7c-15-6-31-6-46 0z"/><path d="M11 36c14-5 28-5 42 0L32 69z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/><g fill="currentColor"><circle cx="25" cy="44" r="4.6"/><circle cx="38" cy="43" r="3.7"/><circle cx="32" cy="54" r="4"/></g></svg>
+        <p class="lede">Fotos reais, tiradas aqui e pelos nossos clientes. Sabores e preços do dia, a gente passa no WhatsApp.</p>
+      </div>
+    </div>
+    <div class="menu-grid reveal">
+      <article class="dish rv">
+        <figure class="pol" style="--r:-4deg"><img src="assets/fotos/quatro-sabores.jpg" alt="Pizza redonda dividida em quatro sabores, com milho, tomate e calabresa" width="165" height="220" loading="lazy" decoding="async"><figcaption>Foto real</figcaption></figure>
+        <div><span class="tag">Até 4 sabores</span><h3>Redonda</h3><p>Não conseguiu escolher? Divide em quatro e prova tudo de uma vez.</p></div>
+      </article>
+      <article class="dish rv" style="--i:1">
+        <figure class="pol" style="--r:3deg"><img src="assets/fotos/gigante.jpg" alt="Pizza retangular gigante com vários sabores em faixas" width="165" height="220" loading="lazy" decoding="async"><figcaption>Foto real</figcaption></figure>
+        <div><span class="tag">Pra festa</span><h3>Retangular gigante</h3><p>Feita pra mesa cheia: vários sabores lado a lado, um pedaço pra cada um.</p></div>
+      </article>
+      <article class="dish rv" style="--i:2">
+        <figure class="pol" style="--r:-2deg"><img src="assets/fotos/coracao-morango.jpg" alt="Pizza doce em formato de coração com morangos" width="165" height="220" loading="lazy" decoding="async"><figcaption>Foto real</figcaption></figure>
+        <div><span class="tag">Sobremesa</span><h3>Pizzas doces</h3><p>Chocolate, morango, confete. Dá até pra escrever um recado em cima.</p></div>
+      </article>
+      <article class="dish rv" style="--i:3">
+        <figure class="pol" style="--r:4deg"><img src="assets/fotos/esfihas.jpg" alt="Bandeja redonda cheia de esfihas" width="165" height="220" loading="lazy" decoding="async"><figcaption>Foto real</figcaption></figure>
+        <div><span class="tag">Salgadas e doces</span><h3>Esfihas</h3><p>Pra abrir o apetite ou fechar a noite com um doce.</p></div>
+      </article>
+    </div>
+    <p class="menu-note reveal"><span class="rv">Em média R$ 20 a 40 por pessoa, segundo as avaliações no Google.</span><a class="link rv" style="--i:1" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Me%20manda%20o%20card%C3%A1pio%20de%20hoje%3F" target="_blank" rel="noopener">Pedir o cardápio de hoje</a></p>
+  </div>
+</section>
+
+<section id="monte" class="sec dark live" aria-labelledby="t-monte">
+  <div class="wrap builder">
+    <div class="reveal">
+      <div class="rv">
+        <svg class="mpizza" viewBox="0 0 400 400" role="img" aria-labelledby="mTitle">
+          <title id="mTitle">Prévia da pizza com os sabores escolhidos</title>
+          <defs>
+            <radialGradient id="mBoard" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#7A4524"/><stop offset=".7" stop-color="#57301A"/><stop offset="1" stop-color="#3A1C0D"/></radialGradient>
+            <radialGradient id="mCrust" gradientUnits="userSpaceOnUse" cx="200" cy="200" r="182"><stop offset=".86" stop-color="#D99448"/><stop offset=".93" stop-color="#EDB866"/><stop offset="1" stop-color="#A65A1C"/></radialGradient>
+            <pattern id="pt-plain" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F7DC92"/><circle cx="14" cy="18" r="9" fill="#FCEBB8"/><circle cx="42" cy="40" r="11" fill="#FCEBB8"/><circle cx="40" cy="12" r="3" fill="#E0A94F" opacity=".6"/></pattern>
+            <pattern id="pt-calabresa" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F6D98A"/><g fill="#B8341A" stroke="#7E1A0A" stroke-width="2"><circle cx="15" cy="15" r="11"/><circle cx="43" cy="41" r="11"/></g><g fill="#E9845A"><circle cx="12" cy="18" r="2"/><circle cx="18" cy="11" r="1.6"/><circle cx="46" cy="38" r="2"/></g><path d="M34 12q6-3 12 1M6 42q6-3 12 1" stroke="#FFF4DE" stroke-width="2.4" fill="none" stroke-linecap="round"/></pattern>
+            <pattern id="pt-frango" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F3DFA6"/><g stroke="#D39A55" stroke-width="4" stroke-linecap="round" fill="none"><path d="M6 10q5-4 10 0"/><path d="M30 20q6 3 11-1"/><path d="M10 40q4 5 10 2"/><path d="M38 44q5-4 11 0"/><path d="M22 30l6 3"/></g><g fill="#FFF8E8"><circle cx="24" cy="12" r="5"/><circle cx="46" cy="30" r="4"/><circle cx="8" cy="28" r="4"/></g></pattern>
+            <pattern id="pt-portuguesa" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F4D88C"/><g fill="#E99A8C"><rect x="5" y="6" width="18" height="13" rx="5"/><rect x="31" y="34" width="18" height="13" rx="5"/></g><g fill="#6E7B2A"><circle cx="40" cy="14" r="5"/><circle cx="14" cy="42" r="5"/></g><g fill="#4A5418"><circle cx="40" cy="14" r="2"/><circle cx="14" cy="42" r="2"/></g><circle cx="28" cy="26" r="6" fill="none" stroke="#FFF6E8" stroke-width="2"/></pattern>
+            <pattern id="pt-bacon" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F6D98A"/><path d="M0 28q14-10 28 0t28 0" stroke="#F08A1C" stroke-width="3.2" fill="none"/><g fill="#A8402A"><rect x="8" y="8" width="9" height="6" rx="2"/><rect x="36" y="40" width="9" height="6" rx="2"/><rect x="40" y="10" width="7" height="5" rx="2"/></g><g fill="#FFC22E" stroke="#DB9B12"><circle cx="24" cy="12" r="3.4"/><circle cx="30" cy="16" r="3.4"/><circle cx="12" cy="40" r="3.4"/><circle cx="18" cy="46" r="3.4"/><circle cx="48" cy="26" r="3.4"/></g></pattern>
+            <pattern id="pt-carne" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#EFD49A"/><g stroke="#6B3A1F" stroke-width="4.5" stroke-linecap="round" fill="none"><path d="M6 12q6 4 12 0"/><path d="M28 8q4 6 10 4"/><path d="M8 34q6-4 12 1"/><path d="M34 30q6 4 12 0"/><path d="M22 46q5-3 10 1"/></g><g stroke="#8E5530" stroke-width="3" stroke-linecap="round"><path d="M44 46l6-3"/><path d="M16 22l5 3"/></g><circle cx="44" cy="16" r="5" fill="#7E8C30"/><circle cx="44" cy="16" r="2" fill="#4A5418"/></pattern>
+            <pattern id="pt-mussarela" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#FBEBC0"/><g fill="#E0452A"><circle cx="16" cy="16" r="10"/><circle cx="42" cy="42" r="10"/></g><g fill="#F27552"><circle cx="16" cy="16" r="6"/><circle cx="42" cy="42" r="6"/></g><g fill="#4F5E22"><circle cx="40" cy="12" r="1.4"/><circle cx="12" cy="40" r="1.4"/><circle cx="30" cy="28" r="1.4"/><circle cx="48" cy="24" r="1.2"/></g></pattern>
+            <pattern id="pt-milho" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#F6D98A"/><g fill="#FFC22E" stroke="#DB9B12"><circle cx="8" cy="9" r="3.6"/><circle cx="16" cy="13" r="3.6"/><circle cx="34" cy="8" r="3.6"/><circle cx="27" cy="24" r="3.6"/><circle cx="45" cy="20" r="3.6"/><circle cx="10" cy="34" r="3.6"/><circle cx="20" cy="44" r="3.6"/><circle cx="38" cy="38" r="3.6"/><circle cx="48" cy="48" r="3.6"/><circle cx="31" cy="50" r="3.6"/></g></pattern>
+            <pattern id="pt-chocolate" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#5A2E17"/><circle cx="28" cy="28" r="14" fill="#6E3B1F" opacity=".7"/><circle cx="8" cy="10" r="4" fill="#E8322A"/><circle cx="30" cy="18" r="4" fill="#FFC21A"/><circle cx="48" cy="8" r="4" fill="#2D7FD3"/><circle cx="16" cy="36" r="4" fill="#3FA34D"/><circle cx="40" cy="44" r="4" fill="#F27BB5"/><circle cx="6" cy="50" r="4" fill="#FFC21A"/><circle cx="50" cy="30" r="4" fill="#E8322A"/></pattern>
+            <pattern id="pt-morango" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#5A2E17"/><path d="M0 40q14-8 28 0t28 0" stroke="#FFF3DC" stroke-width="2.4" fill="none" opacity=".9"/><g fill="#D8283A"><path transform="translate(16 16)" d="M0-9C9-9 10 2 0 10C-10 2-9-9 0-9Z"/><path transform="translate(42 30) rotate(30)" d="M0-9C9-9 10 2 0 10C-10 2-9-9 0-9Z"/></g><g fill="#FFE08A"><circle cx="13" cy="15" r="1"/><circle cx="18" cy="13" r="1"/><circle cx="16" cy="20" r="1"/><circle cx="41" cy="29" r="1"/><circle cx="45" cy="31" r="1"/></g></pattern>
+          </defs>
+          <circle cx="204" cy="210" r="196" fill="#2B0400" opacity=".35"/>
+          <circle cx="200" cy="200" r="194" fill="url(#mBoard)"/>
+          <g class="mspin"><g class="mpop" id="mPop">
+            <circle cx="200" cy="200" r="182" fill="url(#mCrust)"/>
+            <g id="mSectors"></g>
+            <g id="mCuts" stroke="#A65A1C" stroke-width="3" stroke-linecap="round" opacity=".6"></g>
+            <circle cx="200" cy="200" r="158" fill="none" stroke="#7A3A10" stroke-opacity=".25" stroke-width="3"/>
+          </g></g>
+        </svg>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="rv">
+        <p class="eyebrow">Monte a sua</p>
+        <h2 id="t-monte" class="h2">Um sabor só? Quero mais.</h2>
+        <p class="lede">Toque nos sabores, até quatro, e veja a pizza mudar. Quando ficar do seu jeito, o pedido vai pronto pro nosso WhatsApp.</p>
+      </div>
+      <ul class="chips rv" style="--i:1" aria-label="Sabores">
+        <li><button type="button" class="chip" data-f="calabresa" aria-pressed="false" style="--c:#B8341A"><span class="dot"></span>Calabresa</button></li>
+        <li><button type="button" class="chip" data-f="frango" aria-pressed="false" style="--c:#D39A55"><span class="dot"></span>Frango</button></li>
+        <li><button type="button" class="chip" data-f="portuguesa" aria-pressed="false" style="--c:#E99A8C"><span class="dot"></span>Portuguesa</button></li>
+        <li><button type="button" class="chip" data-f="bacon" aria-pressed="false" style="--c:#F08A1C"><span class="dot"></span>Bacon com milho</button></li>
+        <li><button type="button" class="chip" data-f="carne" aria-pressed="false" style="--c:#6B3A1F"><span class="dot"></span>Carne desfiada</button></li>
+        <li><button type="button" class="chip" data-f="mussarela" aria-pressed="false" style="--c:#E0452A"><span class="dot"></span>Mussarela com tomate</button></li>
+        <li><button type="button" class="chip" data-f="milho" aria-pressed="false" style="--c:#FFC22E"><span class="dot"></span>Milho</button></li>
+        <li><button type="button" class="chip" data-f="chocolate" aria-pressed="false" style="--c:#5A2E17"><span class="dot"></span>Chocolate com confete</button></li>
+        <li><button type="button" class="chip" data-f="morango" aria-pressed="false" style="--c:#D8283A"><span class="dot"></span>Morango com chocolate</button></li>
+      </ul>
+      <div class="order rv" style="--i:2">
+        <p class="order-label" id="orderCount">Sua pizza</p>
+        <p class="order-line" id="orderLine" aria-live="polite">Calabresa e Frango</p>
+        <div class="order-actions">
+          <a id="orderBtn" class="btn" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Pedir essa no WhatsApp</a>
+          <button type="button" id="moreBtn" class="link">Quero mais um sabor</button>
+        </div>
+        <p class="fine" id="maxNote" hidden>Quatro é o limite da redonda. Tire um sabor pra trocar.</p>
+      </div>
+      <p class="fine rv" style="--i:3">Esses sabores já saíram do nosso forno. O cardápio do dia a gente confirma na conversa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fotos" class="sec redsec live" aria-labelledby="t-fotos">
+  <div class="wrap reveal">
+    <div class="rv"><p class="eyebrow">Direto do forno</p><h2 id="t-fotos" class="h2">Foto real. Pizza de verdade.</h2><p class="lede">Nenhuma imagem de banco. Tudo isso saiu da nossa cozinha e foi parar na mesa de Coremas.</p></div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="track"></div><div class="track rev"></div></div>
+  <div class="wrap">
+    <h3 class="sr-only">Números da casa</h3>
+    <ul class="stats reveal" data-count>
+      <li class="stat rv"><span class="num" data-to="4.5" data-dec="1">4,5</span><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" opacity=".45" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg></span><p>de nota no Google, com 31 avaliações</p></li>
+      <li class="stat rv" style="--i:1"><span class="num" data-to="8.4" data-dec="1">8,4</span><span class="num-suf">mil</span><p>seguidores no Instagram</p></li>
+      <li class="stat rv" style="--i:2"><span class="num" data-to="4">4</span><p>sabores numa pizza só</p></li>
+      <li class="stat rv" style="--i:3"><span class="num" data-to="6">6</span><p>dias por semana com o forno aceso</p></li>
+    </ul>
+    <p class="ig reveal"><a class="link rv" href="https://www.instagram.com/pizzariaqueromais3/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg>Ver mais no @pizzariaqueromais3</a></p>
+  </div>
+</section>
+
+<section id="festas" class="sec live" aria-labelledby="t-festas">
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <div class="wrap party">
+    <div class="collage reveal">
+      <figure class="pol rv" style="--r:-7deg"><img src="assets/fotos/namorados.jpg" alt="Caixa de pizza especial de Dia dos Namorados, com corações" width="165" height="220" loading="lazy" decoding="async"><figcaption>Dia dos Namorados</figcaption></figure>
+      <figure class="pol rv" style="--r:5deg;--i:1"><img src="assets/fotos/parabens.jpg" alt="Pizza meio a meio com Parabéns escrito na metade de chocolate" width="165" height="220" loading="lazy" decoding="async"><figcaption>Com recado</figcaption></figure>
+      <figure class="pol rv" style="--r:-2deg;--i:2"><img src="assets/fotos/retangular-chocolate.jpg" alt="Pizza retangular com sabores salgados e uma faixa de chocolate" width="165" height="220" loading="lazy" decoding="async"><figcaption>Pra turma toda</figcaption></figure>
+    </div>
+    <div class="reveal">
+      <div class="rv">
+        <p class="eyebrow">Festa é com a gente</p>
+        <h2 id="t-festas" class="h2">Toda comemoração termina em pizza</h2>
+        <p class="lede">Aniversário, Dia das Crianças, Dia dos Namorados. Reúna a família, chame os amigos e venha comemorar aqui, ou leve a festa pra casa.</p>
+        <ul class="perks">
+          <li>Retangular gigante com vários sabores</li>
+          <li>Pizza com recado escrito em cima</li>
+          <li>Caixa especial nas datas comemorativas</li>
+          <li>Mesas do lado de fora</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20combinar%20pizza%20pra%20uma%20festa.%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Combinar minha festa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pedir" class="sec soft-sec live" aria-labelledby="t-pedir">
+  <div class="wrap">
+    <div class="reveal"><div class="rv"><p class="eyebrow">Como pedir</p><h2 id="t-pedir" class="h2">Três passos até a primeira fatia</h2></div></div>
+    <div class="steps-wrap">
+      <svg class="trace" viewBox="0 0 1000 88" preserveAspectRatio="none" aria-hidden="true"><path id="tracePath" pathLength="1" vector-effect="non-scaling-stroke" d="M37 44C150-10 260 98 379 44S600-10 720 44S900 90 990 44"/></svg>
+      <ol class="steps reveal" id="steps">
+        <li class="step rv"><span class="step-ic" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="#2B0D06" stroke-width="3.4" stroke-linejoin="round"><path d="M12 12h40a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H30l-12 9v-9h-6a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6z"/><g fill="#FF3B15" stroke="none"><circle cx="22" cy="28" r="3.2"/><circle cx="32" cy="28" r="3.2"/><circle cx="42" cy="28" r="3.2"/></g></svg></span><span class="step-n">Passo 1</span><h3>Chama no Zap</h3><p>Manda um oi pro <a href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener">(83) 99818-9056</a>.</p></li>
+        <li class="step rv" style="--i:1"><span class="step-ic" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="#2B0D06" stroke-width="3.4"><circle cx="32" cy="32" r="24"/><path d="M32 8v48M8 32h48"/><g fill="#FF3B15" stroke="none"><circle cx="21" cy="21" r="4"/><circle cx="43" cy="22" r="4"/><circle cx="22" cy="43" r="4"/><circle cx="42" cy="42" r="4"/></g></svg></span><span class="step-n">Passo 2</span><h3>Escolhe os sabores</h3><p>Até quatro na redonda, vários na gigante. Doce também vale.</p></li>
+        <li class="step rv" style="--i:2"><span class="step-ic" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="#2B0D06" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34h48v18H8z"/><path d="M8 34l8-8h32l8 8"/><path d="M24 20c-4-4 3-6-1-11M32 20c-4-4 3-6-1-11M40 20c-4-4 3-6-1-11" stroke="#FF3B15"/></svg></span><span class="step-n">Passo 3</span><h3>Recebe ou vem comer</h3><p>Combina entrega ou retirada na conversa. Ou senta com a gente nas mesas do lado de fora.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" class="sec live" aria-labelledby="t-faq">
+  <div class="wrap faq">
+    <div class="faq-head reveal"><div class="rv head-ic"><div><p class="eyebrow">Perguntas</p><h2 id="t-faq" class="h2">Antes de pedir</h2><p class="lede">Ficou alguma dúvida? Chama no Zap que a gente responde.</p></div></div></div>
+    <div class="qas reveal">
+      <div class="qa rv"><h3><button type="button" id="q1" aria-expanded="false" aria-controls="a1">Vocês entregam?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a1" role="region" aria-labelledby="q1"><div><p>O pedido é feito pelo WhatsApp, e ali você combina a entrega ou a retirada. Se preferir, vem comer aqui: temos mesas do lado de fora.</p></div></div></div>
+      <div class="qa rv" style="--i:1"><h3><button type="button" id="q2" aria-expanded="false" aria-controls="a2">Quanto tempo demora?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a2" role="region" aria-labelledby="q2"><div><p>Nos horários de pico o forno não para e a espera aumenta. Se a pizza tem hora marcada, peça mais cedo e pergunte a previsão na hora do pedido.</p></div></div></div>
+      <div class="qa rv" style="--i:2"><h3><button type="button" id="q3" aria-expanded="false" aria-controls="a3">Que dia vocês fecham?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a3" role="region" aria-labelledby="q3"><div><p>Só na quarta. Segunda, terça, quinta, sexta, sábado e domingo tem pizza.</p></div></div></div>
+      <div class="qa rv" style="--i:3"><h3><button type="button" id="q4" aria-expanded="false" aria-controls="a4">Dá pra misturar sabores?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a4" role="region" aria-labelledby="q4"><div><p>Dá. A redonda vai com até quatro sabores, e a retangular gigante leva vários lado a lado.</p></div></div></div>
+      <div class="qa rv" style="--i:4"><h3><button type="button" id="q5" aria-expanded="false" aria-controls="a5">Tem pizza doce?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a5" role="region" aria-labelledby="q5"><div><p>Tem. Chocolate, morango com chocolate e confete. E dá pra escrever um recado em cima, tipo Parabéns.</p></div></div></div>
+      <div class="qa rv" style="--i:5"><h3><button type="button" id="q6" aria-expanded="false" aria-controls="a6">Fazem pizza pra festa?<span class="plus" aria-hidden="true"></span></button></h3><div class="ans" id="a6" role="region" aria-labelledby="q6"><div><p>Fazem. Chama no WhatsApp, conta quantas pessoas vão e a gente monta o pedido junto com você.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="onde" class="sec redsec final live" aria-labelledby="t-onde">
+  <div class="wrap final-grid">
+    <div class="reveal">
+      <div class="rv">
+        <p class="eyebrow">Onde estamos</p>
+        <h2 id="t-onde" class="h2">Bateu a vontade? <span class="q">Quero mais.</span></h2>
+        <p class="addr">Rua São Pedro, 2, Cabo Branco, Coremas, PB. Bem do lado da igreja de São Pedro.</p>
+        <div class="ctas">
+          <a class="btn" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Pedir no WhatsApp</a>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzaria%20Quero%20Mais%2C%20Rua%20S%C3%A3o%20Pedro%2C%202%2C%20Coremas%20PB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>Abrir no mapa</a>
+        </div>
+        <p class="phone">WhatsApp (83) 99818-9056</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <aside class="hours rv" aria-labelledby="t-dias">
+        <h3 id="t-dias">Dias de pizza</h3>
+        <p class="today"><i aria-hidden="true"></i><span id="today">Todo dia, menos quarta.</span></p>
+        <ul class="days">
+          <li data-d="1"><span>Segunda</span><span>Aberto</span></li>
+          <li data-d="2"><span>Terça</span><span>Aberto</span></li>
+          <li data-d="3" class="off"><span>Quarta</span><span>Folga</span></li>
+          <li data-d="4"><span>Quinta</span><span>Aberto</span></li>
+          <li data-d="5"><span>Sexta</span><span>Aberto</span></li>
+          <li data-d="6"><span>Sábado</span><span>Aberto</span></li>
+          <li data-d="0"><span>Domingo</span><span>Aberto</span></li>
+        </ul>
+        <p class="tiny">Tem mesas do lado de fora.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img class="badge" src="assets/logo.jpg" alt="Logo da Pizzaria Quero Mais" width="76" height="76" loading="lazy" decoding="async">
+      <div><p class="foot-name">Pizzaria Quero Mais</p><p>Rua São Pedro, 2, Cabo Branco, Coremas, PB, 58770-000</p></div>
+    </div>
+    <ul>
+      <li><a href="https://wa.me/5583998189056" target="_blank" rel="noopener">WhatsApp (83) 99818-9056</a></li>
+      <li><a href="https://www.instagram.com/pizzariaqueromais3/" target="_blank" rel="noopener">Instagram @pizzariaqueromais3</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzaria%20Quero%20Mais%2C%20Rua%20S%C3%A3o%20Pedro%2C%202%2C%20Coremas%20PB" target="_blank" rel="noopener">Como chegar</a></li>
+    </ul>
+  </div>
+  <div class="wrap"><small>Fotos reais da casa e de clientes. © 2026 Pizzaria Quero Mais.</small></div>
+</footer>
+
+<div class="mbar"><a class="btn" href="https://wa.me/5583998189056?text=Oi%2C%20Quero%20Mais!%20Quero%20fazer%20um%20pedido.%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Pedir no WhatsApp</a></div>
+
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const seg = (p, a, b) => clamp((p - a) / (b - a), 0, 1);
+const ss = (p, a, b) => { const t = seg(p, a, b); return t * t * (3 - 2 * t); };
+const eOut = t => 1 - Math.pow(1 - t, 3);
+const rng = seed => { let s = seed >>> 0; return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296; };
+const NS = 'http://www.w3.org/2000/svg';
+const mk = (tag, attrs, parent) => { const el = document.createElementNS(NS, tag); for (const k in attrs) el.setAttribute(k, attrs[k]); if (parent) parent.appendChild(el); return el; };
+const RM = matchMedia('(prefers-reduced-motion: reduce)');
+const WA = '5583998189056';
+const wa = msg => 'https://wa.me/' + WA + '?text=' + encodeURIComponent(msg);
+const joinPt = names => names.length < 2 ? names.join('') : names.slice(0, -1).join(', ') + ' e ' + names[names.length - 1];
+console.assert(joinPt(['A']) === 'A' && joinPt(['A', 'B']) === 'A e B' && joinPt(['A', 'B', 'C']) === 'A, B e C', 'joinPt');
+
+// escritas no DOM só quando o valor muda
+const touched = new Set();
+function put(el, prop, v) { const key = '$' + prop; if (el[key] !== v) { el[key] = v; el.style[prop] = v; touched.add(el); } }
+function putVar(el, name, v) {
+  const key = '$' + name, o = el[key];
+  if (o === undefined || Math.abs(o - v) >= .008 || (o !== v && (v === 0 || v === 1))) { el[key] = v; el.style.setProperty(name, v.toFixed(3)); touched.add(el); }
+}
+function resetCaches() { touched.forEach(el => { for (const k of Object.keys(el)) if (k[0] === '$') delete el[k]; }); }
+
+/* ---------- hero: o vídeo da pizza guiado pelo scroll ---------- */
+const hero = $('#hero'), stage = $('.stage', hero), video = $('#heroVideo'), posterEl = $('.poster', hero);
+const bands = $$('.band', hero), lastBand = bands.length - 1;
+const VIDEO_URL = 'assets/hero-scrub.mp4', POSTER_URL = 'assets/hero-poster.jpg';
+let loadK = 0;
+
+bands.forEach(b => { b._a = +b.dataset.a; b._b = +b.dataset.b; b._ramp = +b.dataset.ramp || 0; $$('.bt', b).forEach(splitWords); });
+console.assert(bands.every((b, i) => b._a < b._b && (i === 0 || bands[i - 1]._b <= b._a)), 'faixas fora de ordem');
+function splitWords(el) {
+  const text = el.textContent.trim(), words = text.split(/\s+/), r = rng(text.length * 31), th0 = +el.dataset.th0 || 0;
+  const sr = document.createElement('span'); sr.className = 'sr-only'; sr.textContent = text;
+  const vis = document.createElement('span'); vis.setAttribute('aria-hidden', 'true');
+  words.forEach((w, i) => {
+    const s = document.createElement('span'); s.className = 'w'; s.textContent = w;
+    s.style.setProperty('--th', (th0 + i / words.length * (.45 - th0 * .5) + r() * .04).toFixed(3));
+    vis.appendChild(s); if (i < words.length - 1) vis.appendChild(document.createTextNode(' '));
+  });
+  el.textContent = ''; el.append(sr, vis);
+  if (el.closest('[data-fx=haze]')) { const soft = vis.cloneNode(true); soft.className = 'soft'; el.appendChild(soft); }
+}
+
+// trava de seek: nunca escreve currentTime com um seek ainda no ar, guarda só o alvo mais novo
+let seekBusy = false, pendingTime = null;
+function requestSeek(t) {
+  if (!video.duration) return;
+  t = Math.min(t, video.duration - .02);
+  if (seekBusy) { pendingTime = t; return; }
+  if (Math.abs(video.currentTime - t) < .004) return;
+  seekBusy = true; video.currentTime = t;
+}
+video.addEventListener('seeked', () => { seekBusy = false; if (pendingTime !== null) { const t = pendingTime; pendingTime = null; requestSeek(t); } });
+video.addEventListener('error', () => { seekBusy = false; pendingTime = null; stage.classList.add('video-failed'); });
+
+// o pôster pinta primeiro; o vídeo vem inteiro como Blob porque muita hospedagem não aceita Range e o seek travaria no ar
+let heroInit = false;
+function initHeroOnce() {
+  if (heroInit) return; heroInit = true;
+  posterEl.style.backgroundImage = `url('${POSTER_URL}')`;
+  let started = false;
+  const start = () => { if (started) return; started = true; loadVideo().catch(() => stage.classList.add('video-failed')); };
+  const img = new Image(); img.onload = img.onerror = start; img.src = POSTER_URL;
+  setTimeout(start, 4000);
+}
+async function loadVideo() {
+  const res = await fetch(VIDEO_URL, { priority: 'low' });
+  if (!res.ok) throw new Error('video ' + res.status);
+  video.src = URL.createObjectURL(await res.blob());
+  video.addEventListener('canplay', () => { stage.classList.add('video-ready'); requestSeek(shown * video.duration); }, { once: true });
+  video.load();
+}
+
+function render(p) {
+  requestSeek(p * video.duration);
+  // legendas: platô longo, rampas suaves, montagem guiada por --k
+  bands.forEach((b, i) => {
+    const a = b._a, z = b._b, f = Math.min(.02, (z - a) / 3);
+    const op = (i === 0 ? 1 : ss(p, a, a + f)) * (i === lastBand ? 1 : 1 - ss(p, z - f, z));
+    let k = clamp((p - a) / (b._ramp || Math.min(.025, (z - a) * .35)), 0, 1);
+    if (i === 0) k = Math.max(k, loadK);
+    put(b, 'opacity', op.toFixed(3)); put(b, 'visibility', op > .01 ? 'visible' : 'hidden'); putVar(b, '--k', k);
+  });
+}
+
+/* ---------- o loop: suaviza na direção do scroll e descansa quando converge ---------- */
+let target = 0, shown = 0, rafId = null, lastTick = 0, loadStart = performance.now(), heroOn = true, scrub = false;
+function heroProgress() { const range = hero.offsetHeight - stage.offsetHeight; return range > 0 ? clamp(-hero.getBoundingClientRect().top / range, 0, 1) : 1; }
+function tick(now) {
+  const dt = Math.min(100, now - (lastTick || now)); lastTick = now;
+  shown += (target - shown) * (1 - Math.pow(1 - .16, dt / 16.667));
+  let busy = Math.abs(target - shown) >= .0005;
+  if (!busy) shown = target;
+  if (loadK < 1) { loadK = Math.min(1, (now - loadStart) / 900); busy = true; }
+  render(shown);
+  if (busy) rafId = requestAnimationFrame(tick); else { rafId = null; lastTick = 0; }
+}
+function onHeroScroll() { target = heroProgress(); if (rafId === null && heroOn) rafId = requestAnimationFrame(tick); }
+function enableScrub() {
+  if (scrub) return; scrub = true;
+  initHeroOnce();
+  resetCaches();
+  target = shown = heroProgress();
+  render(shown);
+  addEventListener('scroll', onHeroScroll, { passive: true });
+  onHeroScroll();
+}
+function disableScrub() {
+  if (!scrub) return; scrub = false;
+  removeEventListener('scroll', onHeroScroll);
+  if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+}
+// os cinco portões do hero estático, iguais caractere por caractere ao @media do CSS
+const GATES = ['(max-width: 720px)', '(orientation: portrait) and (max-width: 1024px)', '(orientation: portrait) and (pointer: coarse)', '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)', '(prefers-reduced-motion: reduce)'];
+const MQLS = GATES.map(q => matchMedia(q));
+function applyHeroMode() {
+  if (MQLS.some(m => m.matches)) { disableScrub(); loadK = 1; resetCaches(); render(1); }
+  else if (!scrub) { loadK = performance.now() - loadStart > 900 ? 1 : loadK; enableScrub(); }
+  ui();
+}
+new IntersectionObserver(([e]) => { heroOn = e.isIntersecting; stage.classList.toggle('on', heroOn); if (heroOn && scrub) onHeroScroll(); }).observe(hero);
+
+/* ---------- entradas, seções vivas e números ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target; el.classList.add('in'); io.unobserve(el);
+  setTimeout(() => el.classList.add('done'), 1800);
+  if (el.hasAttribute('data-count')) countUp(el);
+}), { threshold: .15, rootMargin: '0px 0px -8% 0px' });
+$$('.reveal').forEach(el => io.observe(el));
+const live = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('on', e.isIntersecting)), { rootMargin: '80px' });
+$$('.live').forEach(el => live.observe(el));
+function countUp(root) {
+  $$('.num[data-to]', root).forEach(el => {
+    const to = +el.dataset.to, dec = +(el.dataset.dec || 0), suf = el.dataset.suf || '';
+    const fmt = v => v.toFixed(dec).replace('.', ',') + suf;
+    if (RM.matches) { el.textContent = fmt(to); return; }
+    const t0 = performance.now();
+    const step = now => { const t = Math.min(1, (now - t0) / 1400); el.textContent = fmt(to * eOut(t)); if (t < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+
+/* ---------- monte a sua ---------- */
+const FL = { calabresa: 'Calabresa', frango: 'Frango', portuguesa: 'Portuguesa', bacon: 'Bacon com milho', carne: 'Carne desfiada', mussarela: 'Mussarela com tomate', milho: 'Milho', chocolate: 'Chocolate com confete', morango: 'Morango com chocolate' };
+let sel = ['calabresa', 'frango'];
+const chips = $$('.chip[data-f]'), secG = $('#mSectors'), cutG = $('#mCuts'), mPop = $('#mPop');
+const orderLine = $('#orderLine'), orderCount = $('#orderCount'), orderBtn = $('#orderBtn'), moreBtn = $('#moreBtn'), maxNote = $('#maxNote');
+function drawPizza() {
+  secG.textContent = ''; cutG.textContent = '';
+  const n = sel.length, c = 200, r = 158;
+  if (n <= 1) { mk('circle', { cx: c, cy: c, r, fill: `url(#pt-${n ? sel[0] : 'plain'})` }, secG); return; }
+  const step = 360 / n;
+  for (let i = 0; i < n; i++) {
+    const a1 = (-90 + i * step) * Math.PI / 180, a2 = (-90 + (i + 1) * step) * Math.PI / 180;
+    mk('path', { d: `M${c} ${c}L${(c + r * Math.cos(a1)).toFixed(2)} ${(c + r * Math.sin(a1)).toFixed(2)}A${r} ${r} 0 0 1 ${(c + r * Math.cos(a2)).toFixed(2)} ${(c + r * Math.sin(a2)).toFixed(2)}Z`, fill: `url(#pt-${sel[i]})` }, secG);
+    mk('line', { x1: c, y1: c, x2: (c + 182 * Math.cos(a1)).toFixed(2), y2: (c + 182 * Math.sin(a1)).toFixed(2) }, cutG);
+  }
+}
+function updateOrder(animate) {
+  drawPizza();
+  const names = sel.map(id => FL[id]), full = sel.length >= 4;
+  chips.forEach(ch => { const on = sel.includes(ch.dataset.f); ch.setAttribute('aria-pressed', on); ch.disabled = !on && full; });
+  orderLine.textContent = names.length ? joinPt(names) : 'Escolha pelo menos um sabor';
+  orderCount.textContent = names.length > 1 ? `Sua pizza, ${names.length} sabores` : 'Sua pizza';
+  orderBtn.href = wa(names.length ? `Oi, Quero Mais! Quero pedir uma pizza ${names.length === 1 ? 'de' : 'com'} ${joinPt(names)}. Vim pelo site.` : 'Oi, Quero Mais! Quero fazer um pedido. Vim pelo site.');
+  moreBtn.setAttribute('aria-disabled', full);
+  moreBtn.textContent = full ? 'Já são quatro sabores' : 'Quero mais um sabor';
+  maxNote.hidden = !full;
+  if (animate && !RM.matches) { mPop.classList.remove('pop'); void mPop.getBoundingClientRect(); mPop.classList.add('pop'); }
+}
+chips.forEach(ch => ch.addEventListener('click', () => {
+  const id = ch.dataset.f;
+  sel = sel.includes(id) ? sel.filter(x => x !== id) : sel.length < 4 ? [...sel, id] : sel;
+  updateOrder(true);
+}));
+moreBtn.addEventListener('click', () => {
+  const rest = Object.keys(FL).filter(id => !sel.includes(id));
+  if (sel.length >= 4 || !rest.length) return;
+  sel = [...sel, rest[Math.floor(Math.random() * rest.length)]];
+  updateOrder(true);
+});
+updateOrder(false);
+
+/* ---------- fotos em esteira ---------- */
+const ROWS = [
+  ['carne-e-legumes', 'retangular', 'bacon-cheddar', 'parabens', 'quatro-sabores', 'portuguesa', 'retangular-chocolate'],
+  ['tomate-e-carne', 'quatro-sabores-2', 'coracao-morango', 'esfihas-doces', 'gigante', 'esfihas', 'namorados']
+];
+$$('.track').forEach((tr, i) => {
+  // três voltas da fileira por metade: cada metade passa de 2560px, então o laço nunca mostra buraco
+  const set = [...ROWS[i], ...ROWS[i], ...ROWS[i]].map((f, j) => `<figure class="pol" style="--r:${(j * 37 % 7) - 3}deg"><img src="assets/fotos/${f}.jpg" alt="" width="165" height="220" loading="lazy" decoding="async"></figure>`).join('');
+  tr.innerHTML = set + set;
+});
+const conf = $('#confetti'), CR = rng(3), CC = ['#FF3B15', '#FFC21A', '#94110A', '#3FA34D', '#2D7FD3'];
+for (let i = 0; i < 22; i++) { const c = document.createElement('i'); c.style.cssText = `--x:${(CR() * 100).toFixed(1)}%;--y:${(CR() * 100).toFixed(1)}%;--c:${CC[i % CC.length]};--a:${(CR() * 180).toFixed(0)}deg;--d:${(10 + CR() * 10).toFixed(1)}s;--dl:${(-CR() * 10).toFixed(1)}s`; conf.appendChild(c); }
+
+/* ---------- perguntas ---------- */
+$$('.qa button').forEach(b => {
+  const ans = $('#' + b.getAttribute('aria-controls')); ans.inert = true;
+  b.addEventListener('click', () => { const qa = b.closest('.qa'), open = !qa.classList.contains('open'); qa.classList.toggle('open', open); b.setAttribute('aria-expanded', open); ans.inert = !open; });
+});
+
+/* ---------- hoje ---------- */
+const DAYS = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'], d = new Date().getDay();
+const todayLi = $(`.days li[data-d="${d}"]`); if (todayLi) todayLi.classList.add('now');
+$('#today').textContent = d === 3 ? 'Hoje é quarta, dia de folga. Amanhã tem pizza.' : `Hoje é ${DAYS[d]}: dia de pizza.`;
+
+/* ---------- nav, barra do celular e a linha que se desenha ---------- */
+const nav = $('.nav'), mbar = $('.mbar'), finalSec = $('#onde'), trace = $('#tracePath'), steps = $('#steps');
+let uiQ = false, navSolid = null, barShow = null;
+function ui() {
+  uiQ = false;
+  const solid = hero.getBoundingClientRect().bottom < 80;
+  if (solid !== navSolid) { navSolid = solid; nav.classList.toggle('solid', solid); }
+  const fr = finalSec.getBoundingClientRect(), show = hero.getBoundingClientRect().bottom < 0 && !(fr.top < innerHeight && fr.bottom > 0);
+  if (show !== barShow) { barShow = show; mbar.classList.toggle('show', show); }
+  const r = steps.getBoundingClientRect();
+  put(trace, 'strokeDashoffset', (1 - (RM.matches ? 1 : clamp((innerHeight * .85 - r.top) / (innerHeight * .55), 0, 1))).toFixed(3));
+}
+addEventListener('scroll', () => { if (!uiQ) { uiQ = true; requestAnimationFrame(ui); } }, { passive: true });
+addEventListener('resize', () => { if (scrub) onHeroScroll(); ui(); });
+document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
+MQLS.forEach(m => m.addEventListener('change', applyHeroMode));
+applyHeroMode();
+})();
+</script>
+</body>
+</html>
